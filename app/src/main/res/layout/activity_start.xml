@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <RelativeLayout
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="120dp">
+
+        <EditText
+            android:id="@+id/edUssername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ussername"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/edPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edUssername"
+            android:hint="Password"
+            android:background="@drawable/edit_text_style"
+            android:inputType="textPassword"
+            android:layout_marginRight="40dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/twWrongLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invalid ussername or password "
+            android:textColor="#FF0000"
+            android:layout_below="@+id/edPassword"
+            android:layout_marginTop="5dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/twSubmitLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twLogin"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/meni"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_centerVertical="true"
+        android:paddingLeft="120dp"
+        android:background="#F8F8F8">
+        <TextView
+            android:id="@+id/twLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twLogin"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/textSize"/>
+        <TextView
+            android:id="@+id/twLoginFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twLoginFacebook"
+            android:layout_below="@+id/twLogin"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/textSize"/>
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twRegister"
+            android:layout_below="@+id/twLoginFacebook"
+            android:textSize="@dimen/textSize"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/start_icon"
+        android:layout_centerVertical="true">
+
+    </RelativeLayout>
+</RelativeLayout>

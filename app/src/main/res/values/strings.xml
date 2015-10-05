@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <!-- start activity -->
+    <string name="twLogin">Login</string>
+    <string name="twLoginFacebook">Login with Facebook</string>
+    <string name="twRegister">Register</string>
 </resources>
