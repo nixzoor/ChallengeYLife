@@ -17,11 +17,12 @@
             android:layout_height="wrap_content"
             android:hint="Ussername"
             android:background="@drawable/edit_text_style"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginBottom="@dimen/margin10"
+            android:layout_marginRight="@dimen/margin40"
             android:paddingTop="3dp"
             android:paddingBottom="3dp"
-            android:paddingLeft="5dp"/>
+            android:paddingLeft="@dimen/margin5"/>
 
         <EditText
             android:id="@+id/edPassword"
@@ -41,9 +42,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Invalid ussername or password "
-            android:textColor="#FF0000"
+            android:textColor="@color/red"
             android:layout_below="@+id/edPassword"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="@dimen/margin5"
             android:visibility="invisible"/>
 
         <TextView
@@ -51,8 +52,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/twLogin"
-            android:textSize="20sp"
-            android:layout_alignParentBottom="true"/>
+            android:textSize="@dimen/textSize20"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/light_blue"/>
 
     </RelativeLayout>
 
@@ -62,36 +64,47 @@
         android:layout_height="130dp"
         android:layout_centerVertical="true"
         android:paddingLeft="120dp"
-        android:background="#F8F8F8">
+        android:background="#F8F8F8"
+        android:visibility="visible"
+        android:paddingTop="@dimen/margin25">
         <TextView
             android:id="@+id/twLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/twLogin"
-            android:layout_marginBottom="10dp"
-            android:textSize="@dimen/textSize"/>
-        <TextView
-            android:id="@+id/twLoginFacebook"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/twLoginFacebook"
-            android:layout_below="@+id/twLogin"
-            android:layout_marginBottom="10dp"
-            android:textSize="@dimen/textSize"/>
+            android:layout_marginBottom="@dimen/margin10"
+            android:textSize="@dimen/textSize24"
+            android:textColor="@color/light_blue"/>
         <TextView
             android:id="@+id/Register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/twRegister"
-            android:layout_below="@+id/twLoginFacebook"
-            android:textSize="@dimen/textSize"/>
+            android:layout_below="@+id/twLogin"
+            android:textSize="@dimen/textSize24"
+            android:textColor="@color/light_blue"/>
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@mipmap/start_icon"
-        android:layout_centerVertical="true">
+        android:background="@mipmap/logo_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/twLoginFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginBottom="15dp"
+        android:background="@mipmap/facebook_login"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/margin20">
 
     </RelativeLayout>
 </RelativeLayout>
