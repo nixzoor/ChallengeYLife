@@ -58,7 +58,6 @@ public class StartActivity extends Activity implements View.OnClickListener {
             case R.id.twLogin:
                 YoYo.with(Techniques.SlideOutLeft).delay(10).playOn(meni);
                 YoYo.with(Techniques.SlideInRight).delay(10).playOn(login);
-                twLoginFacebook.setVisibility(View.VISIBLE);
                 break;
             case R.id.twSubmitLogin:
                 if(edUssername.getText().toString().equals("admin") && edPassword.getText().toString().equals("admin")){

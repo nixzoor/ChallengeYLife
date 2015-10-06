@@ -103,7 +103,7 @@
         android:layout_marginBottom="15dp"
         android:background="@mipmap/facebook_login"
         android:layout_centerHorizontal="true"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:layout_marginTop="@dimen/margin20">
 
     </RelativeLayout>
