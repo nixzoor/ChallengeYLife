@@ -1,4 +1,4 @@
-package com.nixzoor.challengeylife.activity.activity.activity.activity.constants;
+package com.nixzoor.challengeylife.constants;
 
 import android.content.SharedPreferences;
 

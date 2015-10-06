@@ -1,15 +1,14 @@
-package com.nixzoor.challengeylife.activity.activity.activity.activity;
+package com.nixzoor.challengeylife.activities;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
 import com.nixzoor.challengeylife.R;
-import com.nixzoor.challengeylife.activity.activity.activity.activity.constants.AppConstants;
+import com.nixzoor.challengeylife.constants.AppConstants;
 
 import android.view.View;
 import android.widget.*;

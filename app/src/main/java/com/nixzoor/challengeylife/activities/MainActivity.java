@@ -1,20 +1,19 @@
-package com.nixzoor.challengeylife.activity.activity.activity.activity;
+package com.nixzoor.challengeylife.activities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.nixzoor.challengeylife.R;
-import com.nixzoor.challengeylife.activity.activity.activity.activity.constants.AppConstants;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
 import android.view.View;
 import android.widget.*;
+
+import com.nixzoor.challengeylife.R;
+import com.nixzoor.challengeylife.constants.AppConstants;
 
 public class MainActivity extends Activity {
 
