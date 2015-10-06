@@ -17,15 +17,15 @@ import com.nixzoor.challengeylife.constants.AppConstants;
 
 public class MainActivity extends Activity {
 
-    //@Bind(R.id.twLogout) TextView twLogout;
+    @Bind(R.id.twLogout) TextView twLogout;
 
     @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.challenge_fragment);
-            //ButterKnife.bind(this);
+            setContentView(R.layout.activity_main);
+            ButterKnife.bind(this);
 
-            /*twLogout.setOnClickListener(new View.OnClickListener() {
+            twLogout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
@@ -35,7 +35,7 @@ public class MainActivity extends Activity {
                     startActivity(myintent);
                     finish();
                 }
-            });*/
+            });
 
         }
 
